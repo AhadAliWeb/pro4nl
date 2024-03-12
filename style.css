@@ -171,7 +171,15 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5rem 0;
+}
+
+.home-text,
+.full-guidance {
+  padding-top: 7rem;
+}
+
+.finance-2 {
+  padding: 7rem 0;
 }
 
 .home-text .text {
@@ -186,6 +194,14 @@ a {
   text-align: center;
 }
 
+.mission .para-text {
+  background: #fff;
+}
+
+.mission .para-text p {
+  color: #01a3d3;
+}
+
 .para-text {
   background: #01a3d3;
 }
@@ -194,41 +210,41 @@ a {
   width: 80%;
   margin: 0 auto;
   font-size: 25px;
-  padding: 4rem 1rem;
+  /* padding: 4rem 1rem; */
   color: #fff;
   text-align: center;
 }
 
 .image {
   width: 50%;
+  min-height: 100%;
   z-index: 1;
   position: relative;
 }
 
 .image img {
-  width: 100%;
-}
-
-.left-image::before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  width: 100%;
+  display: block;
   height: 100%;
-  background-color: #01a3d3;
-  z-index: -3;
+  width: 100%;
 }
 
+.left-image::before,
 .right-image::before {
   content: "";
   position: absolute;
   top: -10px;
-  right: -10px;
   width: 100%;
   height: 100%;
   background-color: #01a3d3;
   z-index: -3;
+}
+
+.left-image::before {
+  left: -10px;
+}
+
+.right-image::before {
+  right: -10px;
 }
 
 .text {
@@ -249,11 +265,10 @@ li {
   padding-bottom: 0.75rem;
 }
 
-.strength h2,
-.guidance h2,
-.finance h2 {
+h2 {
   background: #01a3d3;
   color: #fff;
+  margin: 5rem 0;
 }
 
 .why .text {

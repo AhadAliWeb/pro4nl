@@ -190,31 +190,6 @@ a {
   padding-bottom: 1.5rem;
 }
 
-.mission {
-  text-align: center;
-}
-
-.mission .para-text {
-  background: #fff;
-}
-
-.mission .para-text p {
-  color: #01a3d3;
-}
-
-.para-text {
-  background: #01a3d3;
-}
-
-.para-text p {
-  width: 80%;
-  margin: 0 auto;
-  font-size: 25px;
-  /* padding: 4rem 1rem; */
-  color: #fff;
-  text-align: center;
-}
-
 .image {
   width: 50%;
   min-height: 100%;
@@ -226,6 +201,7 @@ a {
   display: block;
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 
 .left-image::before,
@@ -254,6 +230,15 @@ a {
 
 .text p {
   margin-bottom: 1.5rem;
+}
+
+.mission p {
+  font-size: 2rem;
+  color: #585050;
+}
+
+.mission .image {
+  height: 80vh;
 }
 
 .full-guidance p,
@@ -455,10 +440,6 @@ footer a {
     font-size: 2.5rem;
   }
 
-  .para-text p {
-    font-size: 1.1rem;
-  }
-
   .why .text {
     padding: 0;
   }
@@ -466,6 +447,14 @@ footer a {
   .section,
   .why-2 {
     flex-wrap: wrap;
+  }
+
+  .mission .image {
+    height: 50vh;
+  }
+
+  .mission p {
+    font-size: 1.1rem;
   }
 
   .text {
